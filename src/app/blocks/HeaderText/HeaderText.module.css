@@ -1,0 +1,90 @@
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw 10vw;
+    @media (max-width: 768px) {
+        margin-top: 2rem;
+    }
+    @media (max-width: 480px) {
+        margin-top: 1rem;
+        padding: 3.5vw 2vw;
+    }
+    .title {
+        font-size: 2.8rem;
+        font-weight: bold;
+        @media (max-width: 800px) {
+            font-size: 2rem;
+        }
+        @media (max-width: 600px) {
+            font-size: 1.5rem;
+        }
+    }
+    .text {
+        padding-top: 1rem;
+        font-size: 1rem;
+        opacity: 0.5;
+        @media (max-width: 800px) {
+            font-size: 0.9rem;
+        }
+        @media (max-width: 600px) {
+            padding-top: 2vw;
+            font-size: 0.9rem;
+        }
+    }
+    .contentWord1 {
+        margin-left: 0.8rem;
+        color: #FD0050;
+        @media (max-width: 600px) {
+            margin-left: 0.5rem;
+        }
+    }
+    .contentWord2 {
+        margin-left: 0.8rem;
+        color: #50C0FF;
+        @media (max-width: 600px) {
+            margin-left: 0.5rem;
+        }
+    }
+    .topButton {
+        margin-top: 2rem;
+        display: flex;
+        background-color: #50C0FF;
+        width: 12rem;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        font-size: 0.9rem;
+        font-weight: bold;
+        transition: all 0.2s linear;
+        @media (max-width: 768px) {
+            width: 10rem;
+            height: 2rem;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 400px) {
+            margin-top: 1rem;
+            width: 10rem;
+            height: 2.5rem;
+            font-size: 0.8rem;
+        }
+        &:hover{
+            background-color: #FD0050;
+            color: white;
+            border-radius: 0.1rem;
+        }
+        &:active{
+            background-color: #b2023a;
+            color: white;
+            border-radius: 0.1rem;
+            box-shadow: 0.5rem 0.5rem 0.5rem #1b1b1b;
+            transform: translateY(-0.5rem);
+        }
+    }
+
+}

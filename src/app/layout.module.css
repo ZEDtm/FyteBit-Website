@@ -1,0 +1,39 @@
+.mainContainer{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgba(27, 27, 27, 0.2);
+    backdrop-filter: blur(418.9px);
+
+
+}
+.containerNav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem 2rem;
+    @media(max-width: 400px) {
+        padding: 1rem;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        text-transform: uppercase;
+        @media(max-width: 400px) {
+            gap: 0.5rem;
+        }
+    }
+    .logoText{
+        font-family: 'K2D', sans-serif;
+        font-size: 1.6rem;
+        padding-left: 1rem;
+    }
+}
+.childContainer{
+
+}

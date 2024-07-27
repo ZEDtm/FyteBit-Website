@@ -1,0 +1,295 @@
+@media (min-width: 700px) {
+    .section {
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-bottom: 5vw;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media(max-width: 1500px) {
+            display: grid;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .leftCards {
+            display: flex;
+            gap: 1.5vw;
+            @media (max-width: 1500px) {
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+            }
+            @media (max-width: 700px) {
+                display: grid;
+                gap: 1.5vh;
+                justify-content: center;
+            }
+
+            .leftCard {
+                position: relative;
+                padding: 1.5vh 0.5vw;
+                color: white;
+                width: 11.5rem;
+                height: 14rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.04);
+                @media (max-width: 700px) {
+                    padding-bottom: 2vh;
+                }
+                .leftCardImg {
+                    width: 6rem;
+                    height: 5rem;
+                }
+
+                .leftCardTitle {
+                    padding-top: 1.5rem;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+
+                .leftCardText {
+                    padding-top: 0.5rem;
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    opacity: 0.5;
+                    letter-spacing: 0;
+                    text-align: center;
+                }
+            }
+
+            .leftCard:nth-child(1) {
+                position: relative;
+                z-index: 1;
+                top: 8rem;
+                left: 0;
+                @media (max-width: 1500px) {
+                    top: 3vh;
+                    left: 3vw;
+                }
+            }
+
+            .leftCard:nth-child(2) {
+                position: relative;
+                right: 3rem;
+                z-index: 2;
+                @media (max-width: 1500px) {
+                    right: 0;
+                }
+            }
+
+            .leftCard:nth-child(3) {
+                position: relative;
+                z-index: 5;
+                top: 5rem;
+                right: 6rem;
+                @media (max-width: 1500px) {
+                    top: 6vh;
+                    right: 3vw;
+                }
+            }
+        }
+    }
+    .rightCards {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 2rem;
+        gap: 1vw;
+        @media (max-width: 1500px) {
+            justify-content: space-around;
+            margin-top: 2vh;
+            margin-left: 0;
+            padding-bottom: 6vh;
+        }
+
+        .rightCard {
+            padding: 1rem;
+            color: white;
+            width: 11rem;
+            height: 14rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 3px;
+
+            .rightCardImg {
+                width: 100%;
+                height: 9rem;
+            }
+
+            .rightCardTitle {
+                font-weight: 700;
+                font-size: 1rem;
+                padding-top: 1rem;
+            }
+
+            .rightCardText {
+                font-size: 0.9rem;
+                font-weight: 400;
+                opacity: 0.5;
+                line-height: 123%;
+                letter-spacing: 0;
+                padding-top: 0.5rem;
+            }
+        }
+    }
+}
+
+
+.teamText{
+    display: none;
+    @media (max-width: 1500px) {
+        display: block;
+        padding-top: 5vh;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    @media (max-width: 700px) {
+        display: block;
+        padding-top: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .section {
+        display: block;
+
+        .leftCards {
+            padding: 10vw 5vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2vw;
+            @media (min-width: 500px) {
+                gap: 1vw;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .leftCard {
+                justify-self: center;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 45vw;
+                height: 60vw;
+                background-color: rgba(255, 255, 255, 0.04);
+                border-radius: 1vw;
+                padding: 1vw;
+                @media (min-width: 500px) {
+                    width: 29vw;
+                    height: 39vw;
+                }
+            }
+
+            .leftCardImg {
+                width: 6rem;
+                height: 5rem;
+            }
+
+            .leftCardTitle {
+                padding-top: 1.5rem;
+                font-weight: 700;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                @media (min-width: 500px) {
+                    font-size: 1rem;
+                }
+            }
+
+            .leftCardText {
+                padding-top: 0.5rem;
+                font-size: 0.9rem;
+                font-weight: 300;
+                opacity: 0.5;
+                letter-spacing: 0;
+                text-align: center;
+            }
+            .leftCard:nth-child(2) {
+                position: relative;
+                top: 50%;
+                @media (min-width: 500px) {
+                    top: -10%;
+                }
+            }
+            .leftCard:nth-child(3) {
+                position: relative;
+                @media (min-width: 500px) {
+                    top: 10%;
+                }
+            }
+        }
+
+
+        .rightCards {
+            padding: 5vw 5vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2vw;
+            @media (min-width: 500px) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1vw;
+            }
+            .rightCard {
+                justify-self: center;
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                width: 45vw;
+                height: 60vw;
+                background-color: rgba(255, 255, 255, 0.04);
+                padding: 2vw;
+                border-radius: 1vw;
+                @media (min-width: 500px) {
+                    width: 29vw;
+                    height: 39vw;
+                }
+                .rightCardImg {
+                    width: 100%;
+                    height: 20vh;
+                }
+
+                .rightCardTitle {
+                    font-weight: 700;
+                    font-size: 1rem;
+                    padding-top: 1rem;
+                }
+
+                .rightCardText {
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    opacity: 0.5;
+                    line-height: 123%;
+                    letter-spacing: 0;
+                    padding-top: 0.5rem;
+                }
+            }
+            .rightCard:nth-child(1) {
+                @media (max-width: 500px) {
+                    position: relative;
+                    top: 50%;
+                }
+            }
+            .rightCard:nth-child(3) {
+                @media (max-width: 500px) {
+                    grid-column: 2;
+                    grid-row: 2;
+                }
+
+            }
+        }
+    }
+}

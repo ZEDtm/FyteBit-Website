@@ -1,0 +1,182 @@
+@media (min-width:600px) {
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw 10vw 0 10vw;
+    .formHead{
+        .headText{
+            text-align: center;
+            font-weight: 700;
+            font-size: 2rem;
+            @media (max-width: 700px) {
+                font-size: 1.5rem;
+            }
+        }
+        .headDescription{
+            text-align: center;
+            font-size: 1rem;
+            opacity: 0.5;
+            padding-top: 1vw;
+            @media (max-width: 700px) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .formContainer{
+        margin-top: 5vh;
+        background-color: rgba(255, 255, 255, 0.04);
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        width: 35vw;
+        padding: 5vh;
+        @media (max-width: 800px) {
+            padding: 3vh;
+            width: 80%;
+        }
+        @media (min-width: 800px) and (max-width: 1000px) {
+            padding: 3vh;
+            width: 60%;
+        }
+        @media (min-width: 1000px) and (max-width: 1300px) {
+            width: 60%;
+        }
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            width: 50%;
+        }
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.06);
+            box-shadow: 1rem 1rem 1rem #1b1b1b;
+            transform: translateY(-0.5rem);
+        }
+        .formInput{
+            margin-top: 1vh;
+            background-color: rgba(65, 69, 71, 0.5);
+            color: white;
+            padding: 1vh;
+            font-size: 1rem;
+        }
+        .formArea{
+            margin-top: 1vh;
+            background-color: rgba(65, 69, 71, 0.5);
+            color: white;
+            padding: 1vh;
+            font-size: 1rem;
+            resize: vertical;
+            overflow-y: auto;
+            min-height: 10vw;
+            @media (max-width: 800px) {
+                min-height: 15vw;
+            }
+        }
+        .formButton{
+            margin-top: 5vh;
+            width: 12rem;
+            height: 2.5rem;
+            background-color: #50C0FF;
+            color: black;
+            font-size: 0.9rem;
+            align-self: center;
+            font-weight: 700;
+            transition: all 0.2s linear;
+            &:hover{
+                background-color: #FD0050;
+                color: white;
+                font-size: 0.9rem;
+                align-self: center;
+            }
+            &:active{
+                background-color: #b2023a;
+                color: white;
+                border-radius: 0.1rem;
+                box-shadow: 0.5rem 0.5rem 0.5rem #1b1b1b;
+                transform: translateY(-0.5rem);
+            }
+        }
+
+    }
+}
+}
+@media (max-width:600px) {
+
+    .mainContainer{
+        padding: 10vw 5vw 0 5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .formHead{
+            .headText{
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+            .headDescription{
+                text-align: center;
+                font-size: 0.9rem;
+                opacity: 0.5;
+                padding-top: 2vw;
+            }
+        }
+        .formContainer{
+            margin-top: 5vh;
+            background-color: rgba(255, 255, 255, 0.04);
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            width: 100%;
+            padding: 5vw;
+            transition: all 0.2s linear;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.06);
+                box-shadow: 1rem 1rem 1rem #1b1b1b;
+                transform: translateY(-0.5rem);
+            }
+            .formInput{
+                margin-top: 1vh;
+                background-color: rgba(65, 69, 71, 0.5);
+                color: white;
+                padding: 1vh;
+                font-size: 1rem;
+            }
+            .formArea{
+                margin-top: 1vh;
+                background-color: rgba(65, 69, 71, 0.5);
+                color: white;
+                padding: 1vh;
+                font-size: 1rem;
+                resize: vertical;
+                overflow-y: auto;
+                min-height: 30vw;
+            }
+            .formButton{
+                margin-top: 3vh;
+                width: 12rem;
+                height: 2.5rem;
+                background-color: #50C0FF;
+                color: black;
+                font-size: 0.9rem;
+                align-self: center;
+                font-weight: 700;
+                transition: all 0.2s linear;
+                &:hover{
+                    background-color: #FD0050;
+                    color: white;
+                    font-size: 0.9rem;
+                    align-self: center;
+                }
+                &:active{
+                    background-color: #b2023a;
+                    color: white;
+                    border-radius: 0.1rem;
+                    box-shadow: 0.5rem 0.5rem 0.5rem #1b1b1b;
+                    transform: translateY(-0.5rem);
+                }
+            }
+
+        }
+    }
+}

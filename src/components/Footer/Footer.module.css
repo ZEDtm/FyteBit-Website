@@ -1,0 +1,115 @@
+@media (min-width: 600px) {
+
+.mainContainer{
+    padding: 10vh 10vw 5vh;
+    display: flex;
+    justify-content: space-between;
+    .leftComponent{
+        display: flex;
+        align-self: end;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vw;
+        user-select: text;
+        width: 10vw;
+        .headText{
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+    }
+    .middleComponent{
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+        justify-content: center;
+        align-items: center;
+        .headText{
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            font-family: "K2D", sans-serif;
+        }
+    }
+    .rightComponent{
+        display: flex;
+        align-self: end;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5vw;
+        width: 10vw;
+        .headText{
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .headIcons{
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+    .rightComponent svg{
+
+    }
+}
+}
+@media (max-width: 600px) {
+    .mainContainer{
+        padding: 10vw 5vw 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .leftComponent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: text;
+            gap: 0.5rem;
+            .headText{
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+            .headIcons{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        .leftComponent svg{
+            width: 1.8rem;
+        }
+        .middleComponent{
+            display: flex;
+            align-self: center;
+            align-items: center;
+            gap: 0.5rem;
+            .headText{
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.2rem;
+                font-family: "K2D", sans-serif;
+            }
+            .headIcons{
+
+            }
+        }
+        .middleComponent svg{
+            width: 2rem;
+            height: 2rem;
+        }
+        .rightComponent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .headText{
+                display: none;
+            }
+            .headIcons{
+                display: flex;
+                gap: 0.5rem;
+            }
+        }
+        .rightComponent svg{
+            width: 1.5rem;
+        }
+    }
+
+}
